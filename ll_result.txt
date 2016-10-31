@@ -1,0 +1,3 @@
+user:password,status
+xiezar@gmail.com,my123098A,(C)
+login,password,(S)
