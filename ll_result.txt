@@ -1,3 +1,0 @@
-user:password,status
-login,password,(S)
-login,password,(C)

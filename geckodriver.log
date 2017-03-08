@@ -458,3 +458,34 @@ Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
 2017-03-07 20:54:53.800 firefox-bin[1316:46046] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-03-07 21:58:00.961 firefox-bin[1316:46046] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+1488925616638	geckodriver	INFO	Listening on 127.0.0.1:59536
+1488925617673	mozprofile::profile	INFO	Using profile path /var/folders/xf/nxwfqmz56z15g89qhybw4jdc0000gn/T/rust_mozprofile.7akGWVEXdSTa
+1488925617674	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1488925617676	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59545
+1488925618364	Marionette	INFO	Listening on port 59545
+2017-03-07 22:26:59.930 plugin-container[1735:75637] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x933b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-03-07 22:26:59.933 plugin-container[1735:75637] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9603, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1488925666418	geckodriver	INFO	Listening on 127.0.0.1:59571
+1488925667450	mozprofile::profile	INFO	Using profile path /var/folders/xf/nxwfqmz56z15g89qhybw4jdc0000gn/T/rust_mozprofile.AWfPLXxiR4PB
+1488925667451	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1488925667455	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59580
+1488925668145	Marionette	INFO	Listening on port 59580
+2017-03-07 22:27:49.909 plugin-container[1749:76270] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x953b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-03-07 22:27:49.912 plugin-container[1749:76270] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9803, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************

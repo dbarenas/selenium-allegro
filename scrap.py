@@ -6,22 +6,35 @@ import random
 from datetime import date, datetime, timedelta
 import requests
 import json
+import random
+import unicodedata 
 
 headers = {'content-type': 'application/json'}
 sjson={'password':'Jules@2013','username':'donpulpo@gmail.com'}
 r = requests.post('https://hudson.reportingexchange.com/access/loginxhr?language=en', data=json.dumps(sjson), headers=headers)
 result=(r.text)
-print result.split('"')[3]
+# print result.split('"')[3]
 
+
+
+a=range(1000,30000,1)
 
 headers = {"Authorization":"Bearer "+result.split('"')[3]}
-r = requests.get('https://hudson.reportingexchange.com/api/reportingprovisionpublic/401?language=en', headers=headers)
+res=[]
+fw = open('ll_organization.txt', 'r+')
 
-print r.text
+for seq in a:
+	r = requests.get('https://hudson.reportingexchange.com/api/provisioningorganisation/'+str(seq)+'?language=en', headers=headers)
+	#r = requests.get('https://hudson.reportingexchange.com/api/reportingprovisionpublic/'+str(seq)+'?language=en', headers=headers)
+	print r.text
+	fw.write((r.text).encode("utf-8")+'\n')
 
-# browser = webdriver.Firefox()
+	# res.append(r.text)
 
-# browser.get('https://www.reportingexchange.com/reportingProvision/401')
+fw.writelines(res)
 
+# fw = open('ll_result.txt', 'r+')
+# fw.write('user:password,status\n')
+# res.append(list_data[0])
 
-# selenium.addCustomRequestHeader( "Authorization","Bearer "+result.split('"')[3] );
+# fw.writelines(res)
